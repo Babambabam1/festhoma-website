@@ -1,0 +1,91 @@
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  overflow: hidden;
+}
+
+.loader-content {
+  text-align: center;
+  z-index: 2;
+}
+
+.loader-logo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 3rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff6b35 0%, #ffd23f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 60px rgba(255, 107, 53, 0.4);
+}
+
+.loader-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  color: #0a0a0a;
+  font-weight: bold;
+}
+
+.loader-bar {
+  width: 300px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+}
+
+.loader-progress {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #ff6b35, #ffd23f, #00d4aa);
+  border-radius: 2px;
+}
+
+.loader-tagline {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  color: #888;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.loader-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.shape {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff6b35;
+  opacity: 0.6;
+}
+
+.shape:nth-child(2n) {
+  background: #00d4aa;
+}
+
+.shape:nth-child(3n) {
+  background: #ffd23f;
+}
+
+.shape:nth-child(4n) {
+  background: #667eea;
+}
